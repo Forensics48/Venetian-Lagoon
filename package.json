@@ -1,0 +1,35 @@
+{
+  "name": "venetian_lagoon",
+  "version": "1.0.0",
+  "description": "TEST",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Forensics48/Venetian-Lagoon.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Forensics48/Venetian-Lagoon/issues"
+  },
+  "homepage": "https://github.com/Forensics48/Venetian-Lagoon#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "googleapis": "^39.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "leaflet": "^1.8.0",
+    "leaflet-compass": "^1.5.4",
+    "leaflet.locatecontrol": "^0.76.0",
+    "mariadb": "^3.0.0",
+    "multer": "^1.4.4",
+    "nodemon": "^2.0.15",
+    "rater-js": "^1.0.1"
+  }
+}

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--============ REMIX ICONS ============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!--============ CSS ============-->
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/user.css">
+    <link rel="stylesheet" href="/assets/css/userTabs.css">
+    <link rel="stylesheet" href="/assets/css/logbookForm.css">
+    <!--============ FAVICON ============-->
+    <link rel="shortcut icon" href="assets/img/favicon.png">
+
+    <title>LagooD</title>
+</head>
+
+<body>
+
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="/" class="nav__logo"><img class="nav__logo-image" src="assets/img/brand-logo.png" alt=""></a>
+
+            <div class="nav__menu" id="nav-menu">
+                <div class="nav__home">
+                    <a href="/index.html"><i class="ri-home-4-line" id="home-button"></i></a>
+                </div>
+                <div class="nav__dark">
+                    <i class="ri-moon-line" id="theme-button"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="content__container container">
+            <div class="columns grid">
+                <div class="column columns__left">
+                    <div class="user">
+                        <div class="user__info">
+                            <div class="user__image">
+                                <img class="image-img" id="user-profile-picture" src="./assets/img/profilepics/default.jpg" alt="">
+                                <input type="file" id="profile-picture-file" style="display: none;" accept="image/*" onchange="readURL(this)">
+                                <h5 class="image__new" onclick="openNewPictureDialog()">Upload a new picture</h5>
+                            </div>
+
+                            <div class="user__options">
+                                <h5 class="user__name" id="user-name"></h5>
+                                <i class="ri-settings-5-fill" id="show-settings"></i>
+                            </div>
+                            <div class="user__settings" id="user-settings">
+                                <div class="user__setting user__email">
+                                    <label for="user-email">Email : </label>
+                                    <input type="email" name="user-email" id="user-email" value="" readonly>
+                                </div>
+                                <div class="user__setting password__old">
+                                    <label for="current-password">Aktuelles Passwort:</label>
+                                    <input type="password" name="current-password" id="current-password">
+                                </div>
+                                <div class="user__setting password__new">
+                                    <label for="new-password">Neues Passwort:</label>
+                                    <input type="password" name="new-password" id="new-password">
+                                </div>
+                                <div class="user__setting password__new-repeat">
+                                    <label for="new-password-repeat">Neues Passwort wiederholen:</label>
+                                    <input type="password" name="new-password-repeat" id="new-password-repeat">
+                                </div>
+                                <div class="user__setting user__delete">
+                                    <h4 id="delete-account" onclick="deleteAccount()">Account löschen</h4>
+                                </div>
+                                <a href="#" class="button save__button" onclick="saveNewSettings()">Speichern</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column columns__right">
+                    <ul class="tabs2" id="user-tabs">
+                       
+                    </ul>
+
+                    <div class="tab-content">
+                        <div id="reservierungen" data-tab-content class="active">
+                            <div class="bookings" style="overflow-x: auto;">
+                                <h2 class="section__title bookings__title" id="bookings-title">
+                                </h2>
+                                <table id="bookings-table">
+                                </table>
+                                <div class="modalPopup">
+                                    <div class="formPopup" id="commentForm">
+                                        <form action="" class="formContainer">
+                                            <h2>Bitte geben sie Ihr Kommentar ein</h2>
+                                            <br>
+                                            <label for="comment">Kommentar</label>
+                                            <textarea name="user-comment" id="user-comment" cols="30" rows="10" placeholder="Ihr Kommentar..."></textarea>
+                                            <br>
+                                            <br>
+                                            <button id="submit-comment" class="btn">Kommentar hinzufügen</button>
+                                            <button type="button" class="btn cancel" onclick="closePopupWindow('commentForm')">Schließen</button>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="modalPopup">
+                                    <div class="formPopup" id="rateForm">
+                                        <form action="" class="formContainer">
+                                            <h2>Bitte geben Sie Ihre Bewertung ab</h2>
+                                            <div id="star-rating"><fieldset class="rating">
+                                                <input type="hidden" id="offer-id" value="">
+                                                <input type="radio" id="star5" name="rating" value="5"/><label for="star5" class="star full" title="Awesome"></label>
+                                                <input type="radio" id="star4.5" name="rating" value="4.5"/><label for="star4.5" class="star half"></label>
+                                                <input type="radio" id="star4" name="rating" value="4"/><label for="star4" class="star full"></label>
+                                                <input type="radio" id="star3.5" name="rating" value="3.5"/><label for="star3.5" class="star half"></label>
+                                                <input type="radio" id="star3" name="rating" value="3"/><label for="star3" class="star full"></label>
+                                                <input type="radio" id="star2.5" name="rating" value="2.5"/><label for="star2.5" class="star half"></label>
+                                                <input type="radio" id="star2" name="rating" value="2"/><label for="star2" class="star full"></label>
+                                                <input type="radio" id="star1.5" name="rating" value="1.5"/><label for="star1.5" class="star half"></label>
+                                                <input type="radio" id="star1" name="rating" value="1"/><label for="star1" class="star full"></label>
+                                                <input type="radio" id="star0.5" name="rating" value="0.5"/><label for="star0.5" class="star half"></label> 
+                                                </fieldset>
+                                            </div>
+                                            <button type="button" class="btn cancel" onclick="closeRateWindow()">Schließen</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-content">
+                            <div id="logbooks" data-tab-content>
+                                <div class="bookings" style="overflow-x: auto;">
+                                    <h2 class="section__title bookings__title">
+                                        Meine Logbücher
+                                    </h2>
+                                    <p style="text-align:center"><button class="button" onclick="openPopupWindow('journalForm')">+</button><br><br><br></p>
+                                    <div class="modalPopup">
+                                        <div class="formPopup" id="journalForm">
+                                            <form action="" class="formContainer">
+                                                <h2>Bitte Logbuchdaten eingeben</h2><br><br>
+                                                <label for="date">
+                                                    <strong>Datum</strong>
+                                                </label>
+                                                <input type="date" id="date">
+                                                <label for="locationMorning">
+                                                    <strong>Standort morgens</strong>
+                                                </label>
+                                                <input type="text" id="locationMorning" placeholder="Dein Standort">
+                                                <label for="locationEvening">
+                                                    <strong>Standort abends</strong>
+                                                </label>
+                                                <input type="text" id="locationEvening" placeholder="Dein Standort">
+                                                <button type="submit" class="btn">Logbuch hinzufügen</button>
+                                                <button type="button" class="btn cancel" onclick="closePopupWindow('journalForm')">Schließen</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <table id="logbooks-table"></table>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="bootangebot" data-tab-content>
+                            <div class="offer">
+                                <h2 class="section__title bookings__title">
+                                    Boot anbieten
+                                </h2>
+                                <form class="offer__form" action="">
+                                    <div class="row">
+                                        <img id="offer-img" src="#" alt="your image" style="display: none;" />
+                                    </div>
+                                    <div class="row">
+                                        <div class="row__item">
+                                            <label for="img">Wählen Sie ein Bild aus :</label>
+                                            <input type="file" style="display: none;" id="boat-img-input" name="img" accept="image/*" onchange="readURL(this);">
+                                            <input type="button" value="Choose File" onclick="document.getElementById('boat-img-input').click();" />
+                                        </div>
+                                        <div class="row__item">
+                                            <label for="">Name des Bootes :</label>
+                                            <input type="text" id="offer-boat-name">
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="row__item">
+                                            <label for="">Webseite :</label>
+                                            <input type="text" id="offer-website">
+                                        </div>
+                                        <div class="row__item">
+                                            <label for="">Telefon-Nummer :</label>
+                                            <input type="tel" id="offer-phone-number">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="row__item">
+                                            <label for="">Breitengrad :</label>
+                                            <input type="number" id="offer-latitude">
+                                        </div>
+                                        <div class="row__item">
+                                            <label for="">Längengrad :</label>
+                                            <input type="number" id="offer-longitude">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="row__item">
+                                            <label for="">Täglicher Mietpreis ( € ) :</label>
+                                            <input type="number" id="offer-daily-price">
+                                        </div>
+                                        <div class="row__item">
+                                            <label for="">Öffnungszeiten :</label>
+                                            <textarea rows="4" id="offer-opening-time"></textarea>
+                                        </div>
+                                    </div>
+
+                                    <a class="button" onclick="addOffer()">Submit</a>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="assets/js/requests/uploadRequests.js"></script>
+    <script defer src="assets/js/frontend/user.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <script src="assets/js/requests/userRequests.js"></script>
+    <script src="assets/js/misc/darkmode.js"></script>
+    <script src="assets/js/misc/popupWindow.js"></script>
+
+    <script type="text/javascript" src="./assets/js/misc/google.js"></script>
+    <script async defer src="https://apis.google.com/js/api.js" onload="gapiLoaded()"></script>
+    <script async defer src="https://accounts.google.com/gsi/client" onload="gisLoaded()"></script>
+</body>
+
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--============ REMIX ICONS ============-->
+    <link href='//fonts.googleapis.com/css?family=Montserrat:thin,extra-light,light,100,200,300,400,500,600,700,800' 
+rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!--============ CSS ============-->
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/island.css">
+    
+    <!--============ FAVICON ============-->
+    <link rel="shortcut icon" href="assets/img/favicon.png">
+
+    <title>LagooD</title>
+</head>
+
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo"><img src="assets/img/brand-logo.png" class="nav__logo-image" alt=""></a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html#about" class="nav__link">Über</a>
+                    </li>
+                </ul>
+
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html#review" class="nav__link">Berichte</a>
+                    </li>
+                </ul>
+
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html#topIslands" class="nav__link">Beleibte Inseln</a>
+                    </li>
+                </ul>
+
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html#locations" class="nav__link">Karte</a>
+                    </li>
+                </ul>
+
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html#boat" class="nav__link">Boote</a>
+                    </li>
+                </ul>
+
+                <div class="account__container" id="my-account-container">
+                    <div class="nav__account" onclick="onMyAccountClick()">
+                        <div class="nav__account-text">My Account</div>
+                        <i id="my-account" class="ri-account-box-line change-theme"></i>
+                    </div>
+                </div>
+
+
+                <div class="nav__login" onclick="onLoginClick()">
+                    <div class="change-login-text" id="login-text">Einloggen</div>
+                    <i id="login" class="ri-login-box-line change-theme"></i>
+                </div>
+
+                <div class="nav__dark">
+                    <!-- Theme change button -->
+                    <div class="change-theme-name">Dark Mode</div>
+                    <i class="ri-moon-line change-theme" id="theme-button"></i>
+                </div>
+
+                <i class="ri-close-line nav__close" id="nav-close"></i>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-function-line"></i>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+    <div id="lidodivenezia" class="banner-area">
+        <h2>Lido di Venezia</h2>
+    </div>
+</section>
+
+
+<section class="content-area">
+    <div class="wrapper">
+        
+        <p>Jeder, der diese Stadt schon einmal besucht hat, wurde ganz sicher
+           in ihren nahezu magischen Bann gezogen. Ein ganz besonders 
+           besuchenswertes Plätzchen ist dabei der sogenannte „Lido di Venezia“ dar,
+            also der kleine Inselstreifen mit seinen Stränden und Hotels, der die
+             weltbekannte Lagune von Venedig von dem offenen Meer trennt.
+             Lido ist eine der wenigen Inseln von Venedig, auf der es Straßen, Busse und Autos gibt.
+              Lido di Venezia hat einen langen Sandstrand und ist schon seit Mitte des 19.
+               Jahrhundert ein wichtiger Touristenort. Man erreicht von Lido die Altstadt von Venedig
+                mit den sehr häufigen Fähren in wenigen Minuten.
+           Die Insel Lido gehört politisch zur Stadt Venedig. Sie hat eine enorme Länge 
+           von 11 Kilometer in Richtung Nord-Süd, sie ist aber nur wenige hundert Meter
+            breit. Insgesamt hat die Insel eine Größe von nur vier Quadratkilometer.</p>
+    </div>
+</section>
+
+
+
+ <section class="content-area">
+     <div class="wrapper">
+       <h2>Etwas zur Geschichte des Lido</h2>
+        </div>
+          <div class="flexbox">
+           <div class="column">
+            <p>Lange Zeit war der Lido di Venezia kein besonders beliebtes Ziel für Touristen oder Einheimische. Durch seine Entfernung zum Stadtzentrum hat es damals nur sehr wenige Touristen auf den schmalen Sandstreifen verschlagen und auch die Populationsrate war schwindend gering.
+
+              Mit der Zeit haben die Menschen jedoch die Besonderheit des interessanten Inselstreifens erkannt und sie zu einem wirklich sehenswerten Ort verwandelt. Heute ist der schöne Sandstreifen allen voran ein beliebter und sehr mondäner Badeort geworden, der tolle Sandstrände zu bieten hat und Urlaubern unweit der weltweit bekannten Stadt etwas Erholung und Ruhe ermöglicht.</p></div>
+           <img class="column" src="./assets/img/islandpic/149182205.jpg" alt="">
+  </div>
+</section>
+
+<section class="content-area">
+    <div class="wrapper">
+      <h2>Filmfestspiele von Venedig auf der Insel Lido</h2>
+       </div>
+         <div class="flexbox">
+            <img class="column" src="./assets/img/islandpic/cinema.jpg" alt="">
+          <div class="column">
+           <p>Sehr viel los auf Lido ist jedes Jahr, wenn die internationalen Filmfestspiele stattfnden. Sie sind mitten in der Hauptsaison für etwa 10 Tage (meist einige Tage im August und im September). Das wichtigste Gebäude der Filmfestspiele ist der Palazzo del Cinema. Er ist ungefähr 1,5 Kilometer südlich vom Hafen Santa Maria Elisabetta an der Ostseite von Lido in der Nähe des Strands.
+
+            Die Filmfestspiele sind nur ein Teil einer großen Biennale di Venezia. Es ist ein Fest für Kunst und, im jährlichen Wechsel, für Architektur. Die meisten Veranstaltungen sind nicht auf Lido, sondern im östlichen Teil der Hauptinsel im Stadtteil (Sestiere) Castello. Viele Länder  haben einen eigenen, bekannten Pavillon (Deutscher Pavillon, österreichischer Pavillon, schweizer Pavillon usw) mit langer Tradition.</p></div>
+ </div>
+</section>
+
+<section class="content-area">
+    <div class="wrapper">
+      <h2>Lido und seine auffällige Architektur</h2>
+    </div>
+    <div class="flexbox">
+     <div class="column">
+      <p>Die Architektur auf dem Lido ist stark von dem venezianischen Baustil geprägt. Neben den sorgsam betriebenen Stränden und Badeorten auf dem Inselstreifen, weisen viele Gewerke auf den Austragungsort der bedeutsamen Filmfestspiele hin, sodass sich die Gestaltung des Orts stark hieran orientiert hat.</p></div>
+      <img class="column" src="./assets/img/islandpic/Lido_Venedig_06-640x538.jpg" alt="">
+</div>
+</section>
+
+<section class="content-area">
+  <div class="wrapper">
+    <h2>Busse auf Lido di Venezia</h2>
+      <p>Eine wichtiger Bus auf der Insel ist die Stadtbus-Linie 11. Er verbindet den Fährhafen Lido Santa Maria Elisabetta mit dem Süden von Lido und mit der Nachbarinsel Pellestrina. In weniger als einer Stunde kommt man bis in die Stadt Chioggia auf dem Festland im Süden der Lagune. Der Bus fährt tagsüber mindestens alle 30 Minuten. Einzeltickets für Bus und Tram kosten innerhalb Venedig nur 1,50 Euro. Sowohl Lido als auch die Insel Pellestrina gehören zu Venedig. Zwischen Lido und Pellestrina gibt es für einige hundert Meter eine Fähre, dann steigt man wieder in den Bus um.
+
+        Einige andere wichtige Buslinie ist die Linie A. Sie fährt durch die ganze Insel Insel Lido di Venezia von Nord bis Süd und wieder zurück. Sie verkehrt tagsüber alle 10 Minuten. Die Linie A benutzt südlich des Fähranlegers weitgehend die selben Haltestelle als die Linie 11, die nur alle 30 Minuten abfährt. Will man zur Insel Pellestrina muss man allerdings die Linie 11 nehmen, da die Linie A nicht ganz bis in den Süden von Lido zur Fähre fährt. Die Linie A hält am Hafen Santa Maria Elisabetta an der Wasserseite der Straße, in Richtung Norden auf der anderen Seite der Straße. Die Busse sind oft ziemlich voll, auch zu Corona-Zeiten.</p>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+    
+    <a onclick='window.scrollTo({top: 0, behavior: "smooth"});' class="button scrollup" id="scroll-up"
+        style="cursor: pointer;">
+        <i class="ri-arrow-up-line scrollup__icon"></i>
+    </a>
+    <script src="https://cdn.jsdelivr.net/npm/@easepick/bundle@1.1.7/dist/index.umd.min.js"></script>
+    <script src="/assets/js/frontend/main.js"></script>
+    <script src="/assets/js/misc/darkmode.js"></script>
+
+</body>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--============ REMIX ICONS ============-->
+    <link href='//fonts.googleapis.com/css?family=Montserrat:thin,extra-light,light,100,200,300,400,500,600,700,800' 
+rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!--============ CSS ============-->
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/island.css">
+    
+    <!--============ FAVICON ============-->
+    <link rel="shortcut icon" href="assets/img/favicon.png">
+
+    <title>LagooD</title>
+</head>
+
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo"><img src="assets/img/brand-logo.png" class="nav__logo-image" alt=""></a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html#about" class="nav__link">Über</a>
+                    </li>
+                </ul>
+
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html#review" class="nav__link">Berichte</a>
+                    </li>
+                </ul>
+
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html#topIslands" class="nav__link">Beliebte Inseln</a>
+                    </li>
+                </ul>
+
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html#locations" class="nav__link">Karte</a>
+                    </li>
+                </ul>
+
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html#boat" class="nav__link">Boote</a>
+                    </li>
+                </ul>
+
+                <div class="account__container" id="my-account-container">
+                    <div class="nav__account" onclick="onMyAccountClick()">
+                        <div class="nav__account-text">My Account</div>
+                        <i id="my-account" class="ri-account-box-line change-theme"></i>
+                    </div>
+                </div>
+
+
+                <div class="nav__login" onclick="onLoginClick()">
+                    <div class="change-login-text" id="login-text">Einloggen</div>
+                    <i id="login" class="ri-login-box-line change-theme"></i>
+                </div>
+
+                <div class="nav__dark">
+                    <!-- Theme change button -->
+                    <div class="change-theme-name">Dark Mode</div>
+                    <i class="ri-moon-line change-theme" id="theme-button"></i>
+                </div>
+
+                <i class="ri-close-line nav__close" id="nav-close"></i>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-function-line"></i>
+            </div>
+        </nav>
+    </header>
+    
+<section>
+    <div id="burano" class="banner-area">
+        <h2>Burano</h2>
+    </div>
+</section>
+
+<section class="content-area">
+    <div class="wrapper">
+        <h2>Burano - farbenfroh und wundervoll </h2>
+        <p>Burano liegt am anderen Ende der Lagune von Venedig und so dauert die Fahrt
+           dorthin eine Weile. Eigentlich ist Burano übrigens ebenfalls nicht nur
+           eine Insel. Burano besteht aus vier Inseln, welche durch acht Brücken
+           miteinander verbunden sind. Burano fasziniert im ersten Moment mit seinen
+           unglaublich bunten Häusern in allen Regenbogenfarben, die wirklich jedes
+           Fotografenherz höher schlagen lassen. Ganz besonders schön ist die Insel im Frühling, wenn auch noch die Blumen vor den Häusern
+           in sämtlichen bunten Farben erblühen und einen betörenden Geruch verbreiten. Wenn dazu die ersten Sonnenstrahlen
+           die Nase kitzeln ist Burano einfach nur unglaublich.</p>
+    </div>
+</section>
+
+<section class="content-area">
+    <div class="wrapper">
+        <h2>Die Insel der Sticker und Spitzenklöppler</h2>
+    </div>
+      <div class="flexbox">
+            <img class="column" src="./assets/img/islandpic/bunte-burano-venedig-istock_68286345_xlarge-2-707x471.jpg" alt="">
+            <div class="column">
+            <p>Die bunten Fassaden sind das eine. Mindestens genauso bekannt ist
+           Burano für seine wunderschönen Spitzenstickereien in der Reticella
+           Technik, die Ende des 19. Jahrhundert durch die Spitzenschule,
+           Scuola di Merletti, neu belebt wurde. Im Museo del Merletto kannst
+           Du heute noch echte Burano-Spitzen bewundern. Die Läden in den
+           Gassen Buranos verkaufen meist nicht die teure Burano-Spitze,
+           sondern billige Ware aus Asien.</p></div>
+    </div>
+</section>
+
+<section class="content-area">
+    <div class="wrapper">
+        <h2>Warum sind die Häuser auf Burano eigentlich so bunt?</h2>
+    </div>
+
+        <div class="flexbox">
+            <div class="column">
+                <p>Der Legende nach haben die Fischer der Insel ihre Häuser so
+                bunt gestrichen, weil sie so auch bei starkem Nebel oder
+                nach einer durchzechten Nacht ihr Haus ausmachen konnten.
+                Längst gibt es auf Burano praktisch keine Fischer mehr,
+                doch die bunten Häuschen werden gehegt und gepflegt.
+                Und übrigens soll noch einmal jemand sagen der schiefe Turm
+                von Pisa sei schief, derjenige war noch nie auf Burano und
+                hat noch nie den Campanile von San Martino gesehen. Das
+                nenne ich mal schief!</p></div>
+        
+           <img class="column" src="./assets/img/islandpic/italien_Venedig_burano_shutterstock_561815947-707x463.jpg" alt="">
+        
+    </div>
+</section>
+
+<section class="content-area">
+    <div class="wrapper">
+        <h2>Infrastruktur</h2>
+        <p>Der Legende nach haben die Fischer der Insel ihre Häuser so
+           bunt gestrichen, weil sie so auch bei starkem Nebel oder
+           nach einer durchzechten Nacht ihr Haus ausmachen konnten.
+           Längst gibt es auf Burano praktisch keine Fischer mehr,
+           doch die bunten Häuschen werden gehegt und gepflegt.
+           Und übrigens soll noch einmal jemand sagen der schiefe Turm
+           von Pisa sei schief, derjenige war noch nie auf Burano und
+           hat noch nie den Campanile von San Martino gesehen. Das
+           nenne ich mal schief!</p>
+    </div>
+</section>
+
+
+
+    <a onclick='window.scrollTo({top: 0, behavior: "smooth"});' class="button scrollup" id="scroll-up"
+        style="cursor: pointer;">
+        <i class="ri-arrow-up-line scrollup__icon"></i>
+    </a>
+    <script src="https://cdn.jsdelivr.net/npm/@easepick/bundle@1.1.7/dist/index.umd.min.js"></script>
+    <script src="/assets/js/frontend/main.js"></script>
+    <script src="/assets/js/misc/darkmode.js"></script>
+
+</body>

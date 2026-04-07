@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--============ REMIX ICONS ============-->
+    <link href='//fonts.googleapis.com/css?family=Montserrat:thin,extra-light,light,100,200,300,400,500,600,700,800' 
+rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!--============ CSS ============-->
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/island.css">
+    
+    <!--============ FAVICON ============-->
+    <link rel="shortcut icon" href="assets/img/favicon.png">
+
+    <title>LagooD</title>
+</head>
+
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo"><img src="assets/img/brand-logo.png" class="nav__logo-image" alt=""></a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html#about" class="nav__link">Über</a>
+                    </li>
+                </ul>
+
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html#review" class="nav__link">Berichte</a>
+                    </li>
+                </ul>
+
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html#topIslands" class="nav__link">Beleibte Inseln</a>
+                    </li>
+                </ul>
+
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html#locations" class="nav__link">Karte</a>
+                    </li>
+                </ul>
+
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html#boat" class="nav__link">Boote</a>
+                    </li>
+                </ul>
+
+                <div class="account__container" id="my-account-container">
+                    <div class="nav__account" onclick="onMyAccountClick()">
+                        <div class="nav__account-text">My Account</div>
+                        <i id="my-account" class="ri-account-box-line change-theme"></i>
+                    </div>
+                </div>
+
+
+                <div class="nav__login" onclick="onLoginClick()">
+                    <div class="change-login-text" id="login-text">Einloggen</div>
+                    <i id="login" class="ri-login-box-line change-theme"></i>
+                </div>
+
+                <div class="nav__dark">
+                    <!-- Theme change button -->
+                    <div class="change-theme-name">Dark Mode</div>
+                    <i class="ri-moon-line change-theme" id="theme-button"></i>
+                </div>
+
+                <i class="ri-close-line nav__close" id="nav-close"></i>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-function-line"></i>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <div id="sanmichele" class="banner-area">
+            <h2>San Michele</h2>
+        </div>
+    </section>
+    
+     <section class="content-area">
+         <div class="wrapper">
+           <h2>FRIEDHOFSSPAZIERGANG: DIE INSEL DER TOTEN</h2>
+            </div>
+              <div class="flexbox">
+               <div class="column">
+                <p>Die Toteninsel San Michele in Venedig ist ein einzigartiger Friedhof. Nirgendwo sonst wurde eine komplette Insel als Friedhof gestaltet.</p></div>
+                </div>
+    </section>
+    
+    <section class="content-area">
+        <div class="wrapper">
+          <h2>Geschichtlicher Hintergrund</h2>
+           </div>
+             <div class="flexbox">
+                <img class="column" src="./assets/img/islandpic/2017-05_Venedig_03_578x300.jpg" alt="">
+              <div class="column">
+               <p>Seit dem 13. Jahrhundert befand sich auf San Michele ein Kloster der Kamaldulenser, von dem noch der Kreuzgang, die ab 1469 von Mauro Codussi erbaute Renaissancekirche San Michele in Isola und die um 1530 von Guglielmo Bergamasco errichtete sechseckige Cappella Emiliani erhalten sind. In diesem Kloster zeichnete der Mönch Fra Mauro zwischen 1457 und 1459 seine kreisförmige Weltkarte.
+
+                Die bei Umwandlung zum Friedhof mit San Michele verbundene Insel San Cristoforo della Pace gehörte dem gleichnamigen Kloster. 1719 verpachtete das Kloster einen Teil der Insel an die Evangelische Gemeinde Augsburgischer Konfession in Venedig.[2][3] Die zuständige Gesundheitsbehörde Magistrato della Sanità verfügte, dass das Pachtgelände von einer Mauer zu umgeben war, um von außen nicht einsehbar zu sein. Zugang durfte nur von der Wasserseite bestehen, was die Behörde mit der notwendigen Rücksichtnahme gegenüber dem katholischen Kultus begründete.[3] 1810 löste die französische Regierung das Kloster San Cristoforo auf.</p>
+               </p></div>
+     </div>
+    </section>
+
+    <section class="content-area">
+        <div class="wrapper">
+          <h2>PLATZMANGEL, RUHEZEITEN UND OSSUARIEN</h2>
+           </div>     
+               <p>Von Beginn an hatte San Michele mit Platzmangel zu kämpfen. Das ist auch heute nicht anders.
+                 Derzeit endet die Ruhezeit für eine Grabstelle meist nach rund zehn bis zwölf Jahren.
+                 Nur wenige können sich Familiengrabstellen mit hundertjähriger Ruhezeit leisten.
+                 Früher verlegte man die sterblichen Überreste der Toten in das Ossuarium (Beinhaus).
+                 Es befindet sich auf der nahe gelegenen Insel Sant’Ariano. Es wurde schon 1565 zur
+                 Entlastung der zahlreichen Kleinfriedhöfe in der Stadt eröffnet. Dort sollen die
+                 sterblichen Überreste mehrere Meter aufeinander geschichtet liegen. Das als Knocheninsel
+                 bekannte Eiland gilt heute als überwuchert und unzugänglich.Angehörige, die es sich leisten
+                 können, beantragen eine dauerhafte Bestattung auf San Michele. Dazu werden Asche und Knochen 
+                 der Exhumierten platzsparend in kleinen Metallkästchen aufbewahrt. Wenn es keine lebenden 
+                 Angehörigen gibt oder sie nicht zahlungskräftig sind, werden die sterblichen Überreste auch
+                 heute noch in ein kommunales Ossuarium auf dem Festland gebracht.</p>
+     
+    </section>
+
+
+<a onclick='window.scrollTo({top: 0, behavior: "smooth"});' class="button scrollup" id="scroll-up"
+    style="cursor: pointer;">
+    <i class="ri-arrow-up-line scrollup__icon"></i>
+</a>
+<script src="https://cdn.jsdelivr.net/npm/@easepick/bundle@1.1.7/dist/index.umd.min.js"></script>
+<script src="/assets/js/frontend/main.js"></script>
+<script src="/assets/js/misc/darkmode.js"></script>
+
+</body>
+
+
+
+    

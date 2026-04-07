@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--============ REMIX ICONS ============-->
+    <link href='//fonts.googleapis.com/css?family=Montserrat:thin,extra-light,light,100,200,300,400,500,600,700,800' 
+rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!--============ CSS ============-->
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/island.css">
+    
+    <!--============ FAVICON ============-->
+    <link rel="shortcut icon" href="assets/img/favicon.png">
+
+    <title>LagooD</title>
+</head>
+
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo"><img src="assets/img/brand-logo.png" class="nav__logo-image" alt=""></a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html#about" class="nav__link">Über</a>
+                    </li>
+                </ul>
+
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html#review" class="nav__link">Berichte</a>
+                    </li>
+                </ul>
+
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html#topIslands" class="nav__link">Beleibte Inseln</a>
+                    </li>
+                </ul>
+
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html#locations" class="nav__link">Karte</a>
+                    </li>
+                </ul>
+
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html#boat" class="nav__link">Boote</a>
+                    </li>
+                </ul>
+
+                <div class="account__container" id="my-account-container">
+                    <div class="nav__account" onclick="onMyAccountClick()">
+                        <div class="nav__account-text">My Account</div>
+                        <i id="my-account" class="ri-account-box-line change-theme"></i>
+                    </div>
+                </div>
+
+
+                <div class="nav__login" onclick="onLoginClick()">
+                    <div class="change-login-text" id="login-text">Einloggen</div>
+                    <i id="login" class="ri-login-box-line change-theme"></i>
+                </div>
+
+                <div class="nav__dark">
+                    <!-- Theme change button -->
+                    <div class="change-theme-name">Dark Mode</div>
+                    <i class="ri-moon-line change-theme" id="theme-button"></i>
+                </div>
+
+                <i class="ri-close-line nav__close" id="nav-close"></i>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-function-line"></i>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+    <div id="murano" class="banner-area">
+        <h2>Murano</h2>
+    </div>
+</section>
+
+
+<section class="content-area">
+    <div class="wrapper">
+        
+        <p>Murano, venetisch Muran, ist eine Inselgruppe
+          nordöstlich der Altstadt von Venedig in der
+          Lagune von Venedig. Sie ist bekannt für ihre
+          Glaskunst, lebt aber auch vom Tourismus und
+        – in wesentlich geringerem Umfang – vom Fischfang.</p>
+    </div>
+</section>
+
+
+
+ <section class="content-area">
+     <div class="wrapper">
+       <h2>Glasherstellung</h2>
+        </div>
+          <div class="flexbox">
+           <div class="column">
+            <p>Besucht ihr die Insel, solltet ihr in jedem Fall
+               eine der vielen Glasbläsereien besichtigen.
+               Hier könnt ihr den Besitzern bei ihrem beeindruckenden
+               Handwerk zusehen und schöne Souvenirs einkaufen.
+               Insbesondere Vasen und alle möglichen Schmuckstücke
+               werden gerne als Erinnerungsstück von Touristen mit
+               nach Hause gebracht.In den Fabriken könnt
+               ihr beobachten, wie das Glas erhitzt und
+               dadurch weich gemacht wird. Aufgrund dieser
+               Beweglichkeit kann es nun in alle möglichen Formen gebracht werden.
+               Das Glas der Insel ist international bekannt.
+               Es wird über Europa hinaus in weit entfernte Regionen
+             der Welt exportiert. Auch wenn es mittlerweile in
+              anderen Ländern kopiert wird, ist das Murano Glas
+             eine Besonderheit. Die Herstellungstechniken bleiben
+            der Allgemeinheit verwehrt und werden möglichst nur
+            von Familie zu Familie weitergegeben.
+             Die Glasbläserei sichert ihre Existenz und
+           ist bis heute einer ihrer wichtigsten Berufszweige.</p></div>
+           <img class="imgsol" src="./assets/img/islandpic/vaso-murrina-vetro-murano-16826-rotated-700x1049-removebg-preview.png" alt="">
+  </div>
+</section>
+
+<section class="content-area">
+    <div class="wrapper">
+      <h2>Geschichtlicher Hintergrund</h2>
+       </div>
+         <div class="flexbox">
+            <img class="column" src="./assets/img/islandpic/Download.jpg" alt="">
+          <div class="column">
+           <p>Die bunten Fassaden sind das eine. Mindestens genauso bekannt ist
+             Burano für seine wunderschönen Spitzenstickereien in der Reticella
+             Technik, die Ende des 19. Jahrhundert durch die Spitzenschule,
+             Scuola di Merletti, neu belebt wurde. Im Museo del Merletto kannst
+             Du heute noch echte Burano-Spitzen bewundern. Die Läden in den Gassen
+             Buranos verkaufen meist nicht die teure Burano-Spitze, sondern billige
+             Ware aus Asien.</p></div>
+ </div>
+</section>
+
+<section class="content-area">
+    <div class="wrapper">
+      <h2>Was Sie hier nicht verpassen sollten</h2>
+       </div>
+        
+          
+           <p>Neben den Glasbläsereien lohnt sich in jedem Fall ein Besuch des Museums
+             Museo del Vetro, in dem Glas und dessen Herstellung dargestellt wird.
+             Auf interessante Art und Weise werden die einzelnen Schritte bis zum
+             letztendlichen Ergebnis veranschaulicht. Zudem können bis zu 2000 Jahre
+             alte, aber auch moderne Kunstgegenstände bewundert werden. Bekannt ist
+             es insbesondere für seinen blauen Kelch, den ‚Coppa Barovier‚ aus dem
+             15. Jahrhundert. Tickets für das Glasmuseum können auch als Kombiticket
+             zusammem mit dem Spitzenmuseum auf Burano erworben werden.Auf Murano dreht
+             es sich jedoch nicht ausschließlich um Glas. Ihr könnt bei eurem Besuch 
+             auch andere interessante Sehenswürdigkeiten besichtigen – wie zum Beispiel
+             eine der ältesten Kirchen der Region. Die Basilika ‚Santa Maria e Donato‚ 
+             stammt aus dem 7. Jahrhundert und besitzt einen einzigartigen Boden aus
+             Mosaiksteinen. Weitere sehenswerte Gotteshäuser der Insel sind die Kirchen 
+             „San Pietro Martire“ und „Santa Maria degli Angeli“. Besuchenswert ist auch
+             die geschichtsträchtige ehemalige Kirche Santa Chiara Murano. Interessiert
+             ihr euch für Architektur, solltet ihr zum ‚Palazzo da Mula‚ spazieren.
+             Diese Villa wurde im 15. Jahrhundert aus rotem Ziegelstein in der typischen
+             Bauweise der Spätgotik erbaut. Sie umfasst einen noch gut erhaltenen Garten
+             und diente früher als Sommersitz der reichen Einwohner Venedigs.
+             Viele einzigartige Entdeckungen werdet ihr auf einem Spaziergang durch die kleinen
+            Gassen und an den Kanälen machen, wo ihr den wahren, italienischen Charme der Insel spüren könnt.</p>
+ 
+</section>
+
+<section class="content-area">
+    <div class="wrapper">
+      <h2>Infrastruktur</h2>
+       </div>
+         <div class="flexbox">
+          <div class="column">
+           <p></p></div>
+ </div>
+</section>
+
+
+
+
+
+    
+    <a onclick='window.scrollTo({top: 0, behavior: "smooth"});' class="button scrollup" id="scroll-up"
+        style="cursor: pointer;">
+        <i class="ri-arrow-up-line scrollup__icon"></i>
+    </a>
+    <script src="https://cdn.jsdelivr.net/npm/@easepick/bundle@1.1.7/dist/index.umd.min.js"></script>
+    <script src="/assets/js/frontend/main.js"></script>
+    <script src="/assets/js/misc/darkmode.js"></script>
+
+</body>

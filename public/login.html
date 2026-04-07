@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--============ REMIX ICONS ============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!--============ CSS ============-->
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/login.css">
+    <!--============ FAVICON ============-->
+    <link rel="shortcut icon" href="assets/img/favicon.png">
+
+    <title>LagooD</title>
+</head>
+
+<body>
+
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="/" class="nav__logo"><img class="nav__logo-image" src="assets\img\brand-logo.png" alt=""></a>
+
+            <div class="nav__menu" id="nav-menu">
+                <div class="nav__home">
+                    <a href="/index.html"><i class="ri-home-4-line" id="home-button"></i></a>
+                </div>
+                <div class="nav__dark">
+                    <i class="ri-moon-line change-theme" id="theme-button"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <div class="login-container" id="login-container">
+            <div class="form-container sign-up-container" id="sign-up-form">
+                <form action="#">
+                    <h1>Neues Konto erstellen</h1>
+                    <input type="text" placeholder="Name" id="user-name" required/>
+                    <input type="email" placeholder="E-Mail Adresse" id="user-signup-email" required/>
+                    <div class="error" id="email-signup-error"></div>
+                    <input type="password" placeholder="Passwort" id="user-signup-password" required/>
+                    <div class="error" id="password-signup-error"></div>
+                    <div class="vendor">
+                        <label class="vendor__label" for="user-vendor" style="display: block;">Möchten Sie ein Hausboot anbieten ?</label>
+                        <input class="vendor__checkbox" type="checkbox" id="user-vendor"/>
+                    </div>
+                    <button onclick="signUp(); return false;">Neues Konto erstellen</button>
+                </form>
+            </div>
+            <div class="form-container sign-in-container" id="sign-in-form">
+                <form action="#">
+                    <h1>Anmelden</h1>
+                    <input type="email" placeholder="E-Mail Adresse" id="user-email" required/>
+                    <div class="error" id="email-login-error"></div>
+                    <input type="password" placeholder="Passwort" id="user-password" required/>
+                    <div class="error" id="password-login-error"></div>
+                    <a href="#">Passwort vergessen?</a>
+                    <button onclick="login(); return false;">Anmelden</button>
+                </form>
+            </div>
+            <div class="toggle" onclick="toggleContainer()">
+                <h5 class="toggle__text" id="toggle-description">Registrieren</h5> <i class="ri-toggle-line toggle__button" id="toggle-icon"></i>
+            </div>
+            <div class="overlay-container">
+                <div class="overlay">
+                    <div class="overlay-panel overlay-left">
+                        <h1>Willkommen zurück!</h1>
+                        <p>Um mit uns in Verbindung zu bleiben, loggen Sie sich bitte
+                            mit Ihren persönlichen Daten ein</p>
+                        <button class="ghost" id="signIn">Anmelden</button>
+                    </div>
+                    <div class="overlay-panel overlay-right">
+                        <h1>Hello, Friend!</h1>
+                        <p>Geben Sie Ihre persönlichen Daten ein und beginnen
+                            Sie Ihre Reise mit uns</p>
+                        <button class="ghost" id="signUp">Neues Konto erstellen</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="assets/js/frontend/login.js"></script>
+    <script src="assets/js/misc/darkmode.js"></script>
+    <script src="assets/js/requests/userRequests.js"></script>
+</body>
+
+</html>

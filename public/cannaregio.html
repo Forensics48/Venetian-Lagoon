@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--============ REMIX ICONS ============-->
+    <link href='//fonts.googleapis.com/css?family=Montserrat:thin,extra-light,light,100,200,300,400,500,600,700,800' 
+rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!--============ CSS ============-->
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/island.css">
+    
+    <!--============ FAVICON ============-->
+    <link rel="shortcut icon" href="assets/img/favicon.png">
+
+    <title>LagooD</title>
+</head>
+
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo"><img src="assets/img/brand-logo.png" class="nav__logo-image" alt=""></a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html#about" class="nav__link">Über</a>
+                    </li>
+                </ul>
+
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html#review" class="nav__link">Berichte</a>
+                    </li>
+                </ul>
+
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html#topIslands" class="nav__link">Beleibte Inseln</a>
+                    </li>
+                </ul>
+
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html#locations" class="nav__link">Karte</a>
+                    </li>
+                </ul>
+
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html#boat" class="nav__link">Boote</a>
+                    </li>
+                </ul>
+
+                <div class="account__container" id="my-account-container">
+                    <div class="nav__account" onclick="onMyAccountClick()">
+                        <div class="nav__account-text">My Account</div>
+                        <i id="my-account" class="ri-account-box-line change-theme"></i>
+                    </div>
+                </div>
+
+
+                <div class="nav__login" onclick="onLoginClick()">
+                    <div class="change-login-text" id="login-text">Einloggen</div>
+                    <i id="login" class="ri-login-box-line change-theme"></i>
+                </div>
+
+                <div class="nav__dark">
+                    <!-- Theme change button -->
+                    <div class="change-theme-name">Dark Mode</div>
+                    <i class="ri-moon-line change-theme" id="theme-button"></i>
+                </div>
+
+                <i class="ri-close-line nav__close" id="nav-close"></i>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-function-line"></i>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+    <div id="cannaregio" class="banner-area">
+        <h2>Cannaregio</h2>
+    </div>
+</section>
+
+
+<section class="content-area">
+    <div class="wrapper">
+        
+        <p>Cannaregio ist eines der sechs Stadtteile (Sestieri) der Insel Venedig.
+           Der gesamte Norden der Altstadt, etwa vom Hauptbahnhof bis zur Kirche
+           Santa Maria dei Miracoli nordöstlich der Rialtobrücke, gehört zu Cannaregio.
+           Es ist ein sehr interessantes Stadtviertel ohne die ganz großen Sehenswürdigkeiten,
+           welche Venedig so berühmt machen. Viele Touristen durchqueren Cannaregio zu Fuß auf
+           dem Weg vom Bahnhof zur Rialtobrücke. Manche besuchen zumindest das jüdische Viertel
+           von Venedig, die meistbesuchte Sehenswürdigkeit in Cannaregio.
+           Doch der interessante Norden des Stadtteils wird nur von einem sehr
+           kleinen Anteil der Touristen besucht. Gerade hier findet man noch so
+           etwas wie das gute, alte Venedig. Verwinkelte Gassen, kleine Geschäfte
+           und Pensionen und einige sehr gute Cafes, Bars und Restaurants.</p>
+    </div>
+</section>
+
+
+
+ <section class="content-area">
+     <div class="wrapper">
+       <h2>Geschichtlicher Hintergrund</h2>
+        </div>
+          <div class="flexbox">
+           <div class="column">
+            <p>Der Name des Viertels kann auf zwei verschiedene Arten hergeleitet werden.
+               Die erste Erklärung ist eine Abstammung vom Begriff ‚Canal Regio‘. Damit
+               wird ein Kanal bezeichnet, der früher als Zugang von der Stadt zum
+               Festland diente. Die zweite Erklärung kommt von „Canna Regio“.
+               Das bedeutet, dass es sich um eine Gegend handelte, die früher
+               dicht mit Schilf bewachsen war.
+               Cannaregio war in früherer Zeit das Judenviertel Venedigs. Denn nur dort im etwas
+               abgelegenen „Ghetto vecchio“ durften sich zur damaligen Zeit die Juden niederlassen.
+               Durch den begrenzten Platz waren die Menschen damals gezwungen ihre Häuser in die Höhe
+               zu bauen. Aus diesem Grund finden sich nur in diesem Viertel Venedigs relativ hohe
+               Wohnhäuser mit fünf oder sechs Stockwerken.</p></div>
+           <img class="column" src="./assets/img/islandpic/Cannaregio_12-640x427.jpg" alt="">
+  </div>
+</section>
+
+<section class="content-area">
+    <div class="wrapper">
+      <h2>Was Sie hier nicht verpassen sollten</h2>
+       </div>
+         <div class="flexbox">
+            <img class="column" src="./assets/img/islandpic/Ghetto_Cannaregio.jpg" alt="">
+          <div class="column">
+           <p>Unbedingt besuchen sollte man das Juden-Viertel
+            um den Platz Campo di Ghetto Nove. Sehenswert
+            sind das jüdische Museum, die Synagoge und die
+            Denkmäler. Das Wort "Ghetto" stammt übrigens von hier
+            und hat es von Venedig kommend in alle großen
+            europäischen Sprachen geschafft. Die Juden wurden
+            nachts früher in ihrem Viertel eingesperrt. Ghetto
+            bedeutet auf Italienisch eigentlich Gießerei. An der
+            Stelle des Judenviertels war eine Eisen-Gießerei,
+            deswegen hieß das Viertel schon vor dem Zuzug der
+            Juden Ghetto.</p></div>
+            
+            <div class="column">
+              <p>Auch eine der bekanntesten Kirchen von Venedig
+                ist in Cannaregio, die Chiesa Santa Maria dei
+                Miracoli (Kirche der Heiligen Maria der Wunder).
+                Die fast quadratische Kirche ist im Stil der 
+                frühen Renaissance (15: Jahrhundert) erbaut. Sie wird
+                wegen der tollen Fassade oft auch einfach
+                Marmor-Kirche genannt. Sehr schönes Bauwerk,
+                das 3 Euro Eintritt kostet, lohnt sich. Miracoli
+                heißt übersetzt Wunder (Plural), deswegen
+                heißt wohl auch das in Deutschland sehr bekannte
+                Spaghetti-Fertiggericht aus dem Supermarkt so.</p></div>
+               <img class="column" src="./assets/img/islandpic/Kirche_Santa_Maria_Miracoli.jpg" alt="">
+          
+ </div>
+</section>
+
+<section class="content-area">
+    <div class="wrapper">
+      <h2>Was macht das Viertel so einzigartig?</h2>
+       </div>
+        
+           <p>Cannaregio muss man einfach erlebt haben. Das Viertel bietet
+             auf engstem Platz eine Vielfalt für Besucher und Einheimische.
+              Egal, ob es das bunte Treiben auf der Strada Nova ist oder das
+              beschauliche Leben in einer der ruhigeren Ecken des Viertels
+              – der besondere Charme überträgt sich auf den Besucher genauso
+              wie auf die Einheimischen. Der Stadtteil lädt geradezu ein,
+              ihn auf einem ausgedehnten Spaziergang zu entdecken.
+              Denn jede der 33 Inseln ist anders. Gerade für Hobbyfotografen bieten sich an allen
+              Ecken wunderbare Fotomotive. Der Kontrast zwischen der oftmals überlaufenen Strada Nova,
+              bei der sich die Menschen aus aller Welt tummeln und den beschaulichen Straßen, die ganz
+              den Einheimischen gehören, macht das Viertel einzigartig. Besonders am Abend – siehe auch
+              Venedg bei Nacht! Der pulsierende Stadtteil verströmt Geschichte und lässt den Besucher
+              erleben, was die weltberühmte Lagunenstadt ausmacht, denn es zeigt beide Seiten der
+              Stadt. Wer sich ein besonderes Erlebnis gönnen möchte, sollte sich, wenn es zeitlich
+              passt, der Führung „Legenden und Geister von Cannaregio“ anschließen. Die Führung
+              beginnt bei Einbruch der Dunkelheit und zeigt das Viertel noch einmal von einer
+              ganz anderen Seite. Gerade, wenn man die Stadt von ihrer touristischen Seite
+              bereits kennt, ist diese Führung eine willkommene Abwechslung.</p>
+
+              <p>
+                
+              </p>
+ 
+</section>
+
+</div>
+</section>
+
+    <a onclick='window.scrollTo({top: 0, behavior: "smooth"});' class="button scrollup" id="scroll-up"
+        style="cursor: pointer;">
+        <i class="ri-arrow-up-line scrollup__icon"></i>
+    </a>
+    <script src="https://cdn.jsdelivr.net/npm/@easepick/bundle@1.1.7/dist/index.umd.min.js"></script>
+    <script src="/assets/js/frontend/main.js"></script>
+    <script src="/assets/js/misc/darkmode.js"></script>
+
+</body>
